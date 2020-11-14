@@ -3,6 +3,7 @@
 ---slot 2 - 10 = machines
 ---see lua parameter
 ---fontSize = text size
+---tableName = name at the top of the table
 
 function getStatusName(status)
     local fontYellow = "<font color=yellow>"
@@ -17,6 +18,7 @@ function getStatusName(status)
     end
 end
 
+local tableName = "Name" --export
 local M1Name = "Machine 1" --export
 local M2Name = "Machine 2" --export
 local M3Name = "Machine 3" --export
@@ -32,7 +34,7 @@ local slotsName = { M1Name, M2Name, M3Name, M4Name, M5Name, M6Name, M7Name, M8Na
 local slots = { slot2, slot3, slot4, slot5, slot6, slot7, slot8, slot9, slot10 }
 
 local style = "<style>th { font-size: "..fontSize.."em; text-align: left; vertical-align: middle; border-bottom: 3px solid #ddd; }</style>"
-local html = style.."<table width=100%>"
+local html = style.."<p style='font-size: "..fontSize.."em; text-align: center; margin-top: 15px; margin-bottom: 15px;'>"..tableName.."</p><table width=100%>"
 
 for i = 1,9
 do
