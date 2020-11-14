@@ -1,4 +1,8 @@
 ---Filter -> update()
+---slot1 = screen
+---slot 2 - 10 = machines
+---see lua parameter
+---fontSize = text size
 
 function getStatusName(status)
     local fontYellow = "<font color=yellow>"
@@ -13,10 +17,10 @@ function getStatusName(status)
     end
 end
 
-local M1Name = "Silumine" --export
-local M2Name = "Alliage AL-FE" --export
-local M3Name = "Acier" --export
-local M4Name = "Dispo" --export
+local M1Name = "Machine 1" --export
+local M2Name = "Machine 2" --export
+local M3Name = "Machine 3" --export
+local M4Name = "Machine 4" --export
 local M5Name = "Machine 5" --export
 local M6Name = "Machine 6" --export
 local M7Name = "Machine 7" --export
